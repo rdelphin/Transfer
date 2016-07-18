@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <div class="page-header"><h1>Send Money</h1></div>
-        <div class="row">
+        <div class="row start_transfer">
             <form id="form2" runat="server">
                 <div class="col-md-4">
                     <h4>City</h4>
