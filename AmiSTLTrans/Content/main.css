@@ -12,6 +12,26 @@ body {
 	margin-bottom: 20px;
 }
 
+/* navigation bar */
+.navbar-default {
+    background-color: #54b948;
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #000;
+    color: #fff;
+}
+
+/* form styles */
 .form-signin {
   max-width: 460px;
   padding: 30px 38px 66px;
@@ -33,8 +53,8 @@ body {
 }
 
 .start_transfer {
-    border: 1px solid #EEE;
-    background-color: #e9f5fb;
+   /* border: 1px solid #EEE;
+    background-color: #e9f5fb; */
 }
 
 .details {
