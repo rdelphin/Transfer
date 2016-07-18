@@ -3,6 +3,8 @@
 body {
     background-color: #FFF;
     font-family: "Montserrat", Arial, sans-serif;
+    min-height: 2000px;
+    padding-top: 70px;
 }
 
 .wrapper {    
@@ -11,7 +13,7 @@ body {
 }
 
 .form-signin {
-  max-width: 420px;
+  max-width: 460px;
   padding: 30px 38px 66px;
   margin: 0 auto;
   background-color: #eee;
@@ -31,7 +33,12 @@ body {
 }
 
 .start_transfer {
-    border: 1px solid#EEE;
+    border: 1px solid #EEE;
+    background-color: #e9f5fb;
+}
+
+.details {
+    background-color: #fff;
 }
 
 input[type="text"] {
