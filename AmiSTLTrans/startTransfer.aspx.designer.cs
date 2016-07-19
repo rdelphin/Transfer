@@ -31,15 +31,6 @@ namespace AmiSTLTrans {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList;
         
         /// <summary>
-        /// btnContinue control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnContinue;
-        
-        /// <summary>
         /// txtAmount control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace AmiSTLTrans {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAmount;
+        
+        /// <summary>
+        /// btnContinue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnContinue;
         
         /// <summary>
         /// lblTransAmount control.

@@ -38,43 +38,52 @@
     <!-- end menu -->
 
     <div class="container">
-        <div class="page-header"><h1>Send Money</h1></div>
+        
         <div class="row start_transfer">
+            
+
             <form id="form2" runat="server">
-                <div class="col-md-4">
-                    <h4>Sending Money to:</h4>
+                <div class="col-md-5">
+                    <div class="page-header"><h1>Send Money</h1></div>
+                    <h4>Sending money to</h4>
                     <asp:DropDownList ID="DropDownList" class="form-control" runat="server">
                         <asp:ListItem>Saint-Marc</asp:ListItem>
                     </asp:DropDownList>
 
-                    <!-- continue button -->
-                    <p class="btn_continue"><asp:Button ID="btnContinue" class="btn btn-lg btn-primary btn-block" Text="Continue" runat="server" OnClick="btnContinue_Click" /></p>
-
-                </div>
-                <div class="col-md-4">
-                    <h4>Amount</h4>
+                    <hr />
+                    <!-- amount -->
+                    <h4>Send amount</h4>
                     <div class="input-group">
                         <div class="input-group-addon">$</div>
                         <asp:TextBox ID="txtAmount" class="form-control" runat="server" OnTextChanged="txtAmount_TextChanged" AutoPostBack="true"></asp:TextBox>
                         <div class="input-group-addon">.00</div>
                     </div>
-                </div>
-                <div class="col-md-4 details">
-                    <h4>Transfer Details</h4>
-                    <dl>
-                        <dd>Transfer Amount</dd>
-                        <dt><asp:Label ID="lblTransAmount" Text="0.00" runat="server"></asp:Label></dt>
 
-                        <dd>Receiver's Currency</dd>
-                        <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label></dt>
+                    <!-- continue button -->
+                    <p class="btn_continue"><asp:Button ID="btnContinue" class="btn btn-lg btn-primary" Text="Continue" runat="server" OnClick="btnContinue_Click" /></p>
+
+                </div>
+                
+                <div class="col-md-7">
+                    <div class="page-header"><h1>Transfer Summary</h1></div>
+                    <div class="details">                     
+                        <dl>
+                            <dd>Transfer Amount</dd>
+                            <dt><asp:Label ID="lblTransAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
+                            <p>
+                                <dd>Receiver's Currency</dd>
+                                <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
+                            </p>
                         
-                        <dd>Transfer Fee</dd>
-                        <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label></dt>
-                        
-                        <dd>Transaction Total</dd>
-                        <dt><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label></dt>
-                    </dl>
-                </div>                
+                            <p>
+                                <dd>Transfer Fee</dd>
+                                <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label> USD</dt>
+                            </p>
+                            <dd>Transaction Total</dd>
+                            <dt class="total"><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label> USD</dt>
+                        </dl>
+                    </div> <!-- /.details -->
+                </div> <!-- /.col-md-7 -->                
             </form>
         </div> <!-- /.row -->
         

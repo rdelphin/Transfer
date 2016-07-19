@@ -1,7 +1,7 @@
 ﻿@import 'https://fonts.googleapis.com/css?family=Montserrat';
 
 body {
-    background-color: #FFF;
+    background-color: #f2f2f2;
     font-family: "Montserrat", Arial, sans-serif;
     min-height: 2000px;
     padding-top: 70px;
@@ -31,6 +31,10 @@ body {
     color: #fff;
 }
 
+.page-header {
+    color: #54b948;
+}
+
 /* form styles */
 .form-signin {
   max-width: 460px;
@@ -53,12 +57,15 @@ body {
 }
 
 .start_transfer {
-   /* border: 1px solid #EEE;
-    background-color: #e9f5fb; */
+    border: 1px solid #EEE;
+    background-color: #fff;
+    padding: 15px;
 }
 
 .details {
-    background-color: #fff;
+    background-color: #f7f5f3;
+    border: 2px solid #E1DDD3;
+    padding: 15px 0 0 15px;
 }
 
 input[type="text"] {
@@ -71,6 +78,16 @@ input[type="password"] {
   margin-bottom: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+dt {
+    color: #393939;
+    font-weight: normal;
+}
+
+dt.total {
+    color: #54b948;
+    font-size: 1.471em;
 }
 
 /* Error alert syles*/
