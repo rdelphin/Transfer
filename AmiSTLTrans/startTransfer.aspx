@@ -30,7 +30,7 @@
                 <li><a href="#">Fees and Estimate</a></li>            
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Sign in</a></li>            
+                <li><a href="#">Welcome!</a></li>            
                 <li><a href="logout.aspx">Sign out</a></li>                 
             </ul>
         </div><!--/.nav-collapse -->
@@ -71,15 +71,13 @@
                         <dl>
                             <dd>Transfer Amount</dd>
                             <dt><asp:Label ID="lblTransAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
-                            <p>
-                                <dd>Receiver's Currency</dd>
-                                <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
-                            </p>
-                        
-                            <p>
-                                <dd>Transfer Fee</dd>
-                                <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label> USD</dt>
-                            </p>
+                            
+                            <dd>Receiver's Currency</dd>
+                            <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
+                          
+                            <dd>Transfer Fee</dd>
+                            <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label> USD</dt>
+                          
                             <dd>Transaction Total</dd>
                             <dt class="total"><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label> USD</dt>
                         </dl>

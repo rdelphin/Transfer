@@ -69,7 +69,7 @@ body {
 }
 
 input[type="text"] {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -83,6 +83,7 @@ input[type="password"] {
 dt {
     color: #393939;
     font-weight: normal;
+    padding-bottom: 15px
 }
 
 dt.total {

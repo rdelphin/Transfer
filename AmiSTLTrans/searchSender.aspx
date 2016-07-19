@@ -64,25 +64,21 @@
                     <div class="details"> 
                         <asp:Panel runat="server">
                             <dl>                            
-                                <p><dd>Sender :</dd>
-                                    <dt><asp:Label ID="lblSenderName" text="" runat="server"></asp:Label></dt>
-                                </p>
-                                
-                                <p><dd>Telephone:</dd>
-                                    <dt><asp:Label ID="lblPhone" Text="" runat="server"></asp:Label></dt>
-                                </p>
-                            
+                                <dd>Sender :</dd>
+                                <dt><asp:Label ID="lblSenderName" text="" runat="server"></asp:Label></dt>
+                                                               
+                                <dd>Telephone:</dd>
+                                <dt><asp:Label ID="lblPhone" Text="" runat="server"></asp:Label></dt>
+                                                           
                                 <dd>Transfer Amount</dd>
                                 <dt><asp:Label ID="lblTransAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
-                                <p>
-                                    <dd>Receiver's Currency</dd>
-                                    <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
-                                </p>
-                        
-                                <p>
-                                    <dd>Transfer Fee</dd>
-                                    <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label> USD</dt>
-                                </p>
+                                
+                                <dd>Receiver's Currency</dd>
+                                <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
+                                                                                        
+                                <dd>Transfer Fee</dd>
+                                <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label> USD</dt>
+                                
                                 <dd>Transaction Total</dd>
                                 <dt class="total"><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label> USD</dt>
                             </dl>
