@@ -30,7 +30,8 @@
                 <li><a href="#">Fees and Estimate</a></li>            
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Log in/Log out</a></li>            
+                <li><a href="#">Sign in</a></li>            
+                <li><a href="logout.aspx">Sign out</a></li>                 
             </ul>
         </div><!--/.nav-collapse -->
       </div>
