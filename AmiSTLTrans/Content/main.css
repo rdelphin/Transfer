@@ -12,6 +12,10 @@ body {
 	margin-bottom: 20px;
 }
 
+.text-uppercase {
+    color: #54b948;
+}
+
 /* navigation bar */
 .navbar-default {
     background-color: #54b948;
@@ -86,7 +90,7 @@ dt {
     padding-bottom: 15px
 }
 
-dt.total {
+dt.total, .total {
     color: #54b948;
     font-size: 1.471em;
 }

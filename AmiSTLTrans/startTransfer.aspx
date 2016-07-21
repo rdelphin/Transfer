@@ -42,7 +42,6 @@
         
         <div class="row start_transfer">
             
-
             <form id="form2" runat="server">
                 <div class="col-md-5">
                     <div class="page-header"><h1>Send Money</h1></div>
