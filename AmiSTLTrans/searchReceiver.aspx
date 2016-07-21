@@ -47,7 +47,7 @@
 
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowDataBound="OnRowDataBound">
                         <EmptyDataTemplate>
-                            Sender not found.<a href="addReceiver.aspx">Click here to Add the receiver</a>
+                            Receiver not found.<a href="addReceiver.aspx">Click here to Add the receiver</a>
                         </EmptyDataTemplate>
                     </asp:GridView>
                     <br />
@@ -58,29 +58,31 @@
                     <div class="page-header"><h1>Transfer Summary</h1></div>
                     <div class="details"> 
                         <asp:Panel runat="server">
-                            <table style="border:none">                            
-                            <tr><td><b>Receiver :</b></td></tr>
-                            <tr><td><asp:Label ID="lblReceiverName" text="" runat="server"></asp:Label></td></tr>
-                            <tr><td>Telephone:</td></tr>
-                            <tr><td><asp:Label ID="lblReceiverPhone" Text="" runat="server"></asp:Label></td></tr>
+                            <dl>                            
+                                <dd>Receiver</dd>
+                                <dt><asp:Label ID="lblReceiverName" text="" runat="server"></asp:Label></dt>
 
-                            <tr><td><b>Sender :</b></td></tr>
-                            <tr><td><asp:Label ID="lblSenderName" text="" runat="server"></asp:Label></td></tr>
-                            <tr><td>Telephone:</td></tr>
-                            <tr><td><asp:Label ID="lblPhone" Text="" runat="server"></asp:Label></td></tr>
+                                <dd>Telephone</dd>
+                                <dt><asp:Label ID="lblReceiverPhone" Text="" runat="server"></asp:Label></dt>
+
+                                <dd>Sender</dd>
+                                <dt><asp:Label ID="lblSenderName" text="" runat="server"></asp:Label></dt>
+
+                                <dd>Telephone</dd>
+                                <dt><asp:Label ID="lblPhone" Text="" runat="server"></asp:Label></dt>
                     
-                            <tr>
-                                <td>Transfer Amount:</td>
-                            </tr>
-                            <tr> <td class="auto-style1"><asp:Label ID="lblTransAmount" Text="0.00" runat="server"></asp:Label></td></tr>
+                                <dd>Transfer Amount</dd>
+                                <dt><asp:Label ID="lblTransAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
 
-                            <tr><td>Receiver's Currency:</td> </tr>
-                            <tr><td><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label></td></tr>
-                            <tr><td>Transfer Fee:</td></tr>
-                            <tr><td><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label></td></tr>
-                            <tr><td>Transaction Total:</td></tr>
-                            <tr><td><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label></td></tr>
-                            </table>
+                                <dd>Receiver's Currency</dd>
+                                <dt><asp:Label ID="lblReceiveAmount" Text="0.00" runat="server"></asp:Label> USD</dt>
+
+                                <dd>Transfer Fee</dd>
+                                <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label> USD</dt>
+
+                                <dd>Transaction Total</dd>
+                                <dt class="total"><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label> USD</dt>
+                            </dl>
                         </asp:Panel>
                 
                     </div> <!-- /.details -->
@@ -89,8 +91,6 @@
                         
         </form>        
 </div> <!-- /.container -->
-              
-       
-   
+
 </body>
 </html>
