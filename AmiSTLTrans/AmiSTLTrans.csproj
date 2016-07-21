@@ -143,6 +143,7 @@
     <Content Include="startTransfer.aspx" />
     <Content Include="searchSender.aspx" />
     <Content Include="thankYou.aspx" />
+    <Content Include="trackTransfer.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -220,6 +221,13 @@
     </Compile>
     <Compile Include="thankYou.aspx.designer.cs">
       <DependentUpon>thankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="trackTransfer.aspx.cs">
+      <DependentUpon>trackTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="trackTransfer.aspx.designer.cs">
+      <DependentUpon>trackTransfer.aspx</DependentUpon>
     </Compile>
     <Compile Include="welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>

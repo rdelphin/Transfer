@@ -26,7 +26,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Send Money</a></li>
-                <li><a href="#">Track Transfers</a></li>
+                <li><a href="\trackTransfer.aspx">Track Transfers</a></li>
                 <li><a href="#">Fees and Estimate</a></li>            
             </ul>
             <ul class="nav navbar-nav navbar-right">

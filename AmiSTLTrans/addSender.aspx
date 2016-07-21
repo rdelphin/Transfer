@@ -77,7 +77,7 @@
                                 <dt><asp:Label ID="lblTransFee" Text="0.00" runat="server"></asp:Label></dt>
 
                                 <dd>Transaction Total</dd>
-                                <dt class="total><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label></dt>
+                                <dt class="total"><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label></dt>
                             </dl>
                         </asp:Panel>  
                     </div>          
