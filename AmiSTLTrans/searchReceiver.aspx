@@ -1,44 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="searchReceiver.aspx.cs" Inherits="AmiSTLTrans.searchReceiver" EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="searchReceiver.aspx.cs" Inherits="AmiSTLTrans.searchReceiver" EnableEventValidation="false" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Search Receiver</title>
-    <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="Content/main.css" />
-</head>
-<body>
-    <!-- start menu -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">AmiSTLTrans</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Send Money</a></li>
-                <li><a href="#">Track Transfers</a></li>
-                <li><a href="#">Fees and Estimate</a></li>            
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Sign in</a></li>            
-                <li><a href="logout.aspx">Sign out</a></li>            
-            </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <!-- end menu -->
-
-    <div class="container">
-        <form id="form1" runat="server">
+<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
+    <div class="container">        
             <div class="row start_transfer">
                 <div class="col-md-5">
                     <div class="page-header"><h1>Search Receiver</h1></div>
@@ -89,8 +52,6 @@
                 </div> <!-- /.col-md-7 -->
             </div> <!-- /.row -->  
                         
-        </form>        
 </div> <!-- /.container -->
 
-</body>
-</html>
+</asp:Content>

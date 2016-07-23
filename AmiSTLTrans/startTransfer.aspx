@@ -1,48 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="startTransfer.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Send a Transfer</title>
-
-    <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="Content/main.css" />    
-</head>
-<body>
-    <!-- start menu -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">AmiSTLTrans</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Send Money</a></li>
-                <li><a href="\trackTransfer.aspx">Track Transfers</a></li>
-                <li><a href="#">Fees and Estimate</a></li>            
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Welcome!</a></li>            
-                <li><a href="logout.aspx">Sign out</a></li>                 
-            </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <!-- end menu -->
-
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="startTransfer.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
+   
+<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
     <div class="container">
         
         <div class="row start_transfer">
             
-            <form id="form2" runat="server">
+            
                 <div class="col-md-5">
                     <div class="page-header"><h1>Send Money</h1></div>
                     <h4>Sending money to</h4>
@@ -82,12 +45,10 @@
                         </dl>
                     </div> <!-- /.details -->
                 </div> <!-- /.col-md-7 -->                
-            </form>
+            
         </div> <!-- /.row -->
         
     </div> <!-- /.container -->
-    <script src="scripts/jquery-2.2.4.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-</body>
-</html>
+</asp:Content>
+
 

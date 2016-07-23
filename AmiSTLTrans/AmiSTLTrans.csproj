@@ -127,6 +127,7 @@
     <Content Include="scripts\jquery-2.2.4.js" />
     <Content Include="scripts\jquery-2.2.4.min.js" />
     <Content Include="scripts\jquery-2.2.4.min.map" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -202,6 +203,13 @@
       <DependentUpon>searchReceiver.aspx</DependentUpon>
     </Compile>
     <Compile Include="SenderDataAccessLayer.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
     <Compile Include="startTransfer.aspx.cs">
       <DependentUpon>startTransfer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,47 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="addSender.aspx.cs" Inherits="AmiSTLTrans.addSender" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="addSender.aspx.cs" Inherits="AmiSTLTrans.addSender" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Add a Sender</title>
-
-    <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="Content/main.css" /> 
-</head>
-<body>
-    <!-- start menu -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">AmiSTLTrans</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Send Money</a></li>
-                <li><a href="#">Track Transfers</a></li>
-                <li><a href="#">Fees and Estimate</a></li>            
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Welcome!</a></li>            
-                <li><a href="logout.aspx">Sign out</a></li>                 
-            </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <!-- end menu -->
+<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
 
     <div class="container">
         
-        <div class="row start_transfer">
-            <form id="form1" runat="server">
+        <div class="row start_transfer">            
                 <div class="col-md-5">
                     <div class="page-header"><h1>Add a Sender</h1></div>                    
                     <asp:TextBox ID="txtSenderFName" class="form-control" placeholder="First Name" runat="server"></asp:TextBox>
@@ -89,8 +52,6 @@
                         </asp:Panel>  
                     </div>          
                 </div>
-            </form>
         </div> <!-- /.row -->
     </div> <!-- /.container -->
-</body>
-</html>
+</asp:Content>

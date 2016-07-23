@@ -13,15 +13,6 @@ namespace AmiSTLTrans {
     public partial class sendMoney {
         
         /// <summary>
-        /// form2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
-        
-        /// <summary>
         /// DropDownList control.
         /// </summary>
         /// <remarks>

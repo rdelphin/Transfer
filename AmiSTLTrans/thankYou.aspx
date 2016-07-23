@@ -1,25 +1,20 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="thankYou.aspx.cs" Inherits="AmiSTLTrans.thankYou" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="thankYou.aspx.cs" Inherits="AmiSTLTrans.thankYou" %>
 
-<!DOCTYPE html>
+<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-       <table style="border:none">
-           <tr>
-               <td><b>Thank you for choosing AMI ST-Laurent!</b></td>
-           </tr>
-           <tr>
-               <td>Your transfer tracking number is : <asp:Label ID="lblmessage" runat="server" Text=""></asp:Label> </td>
-           </tr>
-           <tr><td><asp:Button ID="btnMakeAnotherTransfer" Text="Make Another Tranfer" runat="server" OnClick="btnMakeAnotherTransfer_Click" /></td></tr>
-       </table>
-    
+    <div class="container">
+        <div class="row start_transfer">
+            <div class="col-md-5">
+
+
+                <p>Thank you for choosing AMI ST-Laurent!</p>
+
+                <p>Your transfer tracking number is :
+                    <asp:Label ID="lblmessage" runat="server" Text=""></asp:Label>
+                </p>
+                <asp:Button ID="btnMakeAnotherTransfer" CssClass="btn btn-lg btn-primary" Text="Make Another Tranfer" runat="server" OnClick="btnMakeAnotherTransfer_Click" /></td></tr>
+
+            </div>
+        </div>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
