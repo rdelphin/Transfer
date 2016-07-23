@@ -139,6 +139,7 @@
     <Content Include="registration\register.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\jquery.maskedinput.min.js" />
     <Content Include="searchReceiver.aspx" />
     <Content Include="startTransfer.aspx" />
     <Content Include="searchSender.aspx" />

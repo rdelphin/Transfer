@@ -50,6 +50,13 @@
 
                     <asp:TextBox ID="txtSenderPhone" class="form-control" placeholder="Sender Phone" runat="server"></asp:TextBox>
 
+                    <!-- JQuery -->
+                    <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+
+                    <script src="scripts/jquery.maskedinput.min.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        $('#txtSenderPhone').mask('999-999-9999');
+                    </script>
                     <p class="btn_continue"><asp:Button ID="btnReset" class="btn btn-lg btn-danger" Text="Reset" runat="server" />
                     <asp:Button ID="btnAdd" class="btn btn-lg btn-primary" Text="Add" runat="server" OnClick="btnAdd_Click" /></p>
                     

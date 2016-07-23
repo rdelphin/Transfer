@@ -85,5 +85,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery-2.2.4.min.js"></script>
 </body>
 </html>
