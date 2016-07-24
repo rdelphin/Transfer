@@ -55,7 +55,7 @@ namespace AmiSTLTrans
                 Session["SenderLName"] = txtSenderLName.Text;
                 Session["SenderPhone"] = txtSenderPhone.Text;
 
-                lblMessage.Text = "Record inserted successfully <a href=\"addReceiver.aspx\">Click here to the Receiver.</a>";
+                lblMessage.Text = "Record inserted successfully <a href=\"searchReceiver.aspx\">Click here to add the Receiver.</a>";
 
                 lblSenderName.Text = Session["SenderFName"].ToString()+ " " + Session["SenderLName"].ToString();
                 lblPhone.Text = Session["SenderPhone"].ToString();

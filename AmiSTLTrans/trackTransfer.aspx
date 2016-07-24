@@ -10,9 +10,9 @@
                     <p>Find the status of a tranfer by entering the reference number <br />
                         and the last name of the sender</p>
                      
-                    <asp:TextBox ID="txtTrackTransfer" class="form-control" runat="server" Text="Enter the Reference #"></asp:TextBox>
+                    <asp:TextBox ID="txtTrackTransfer" class="form-control" runat="server" placeholder="Enter the Reference #"></asp:TextBox>
                      
-                    <asp:TextBox ID="txtTrackLastName" class="form-control" runat="server" Text="Enter Sender Last Name"></asp:TextBox>
+                    <asp:TextBox ID="txtTrackLastName" class="form-control" runat="server" placeholder="Enter Sender Last Name"></asp:TextBox>
                        
                     <p class="btn_continue"><asp:Button ID="btnTrackTranfer" class="btn btn-lg btn-primary" runat="server" Text="Track Transfer" OnClick="btnTrackTranfer_Click" /></p>
                            
@@ -36,7 +36,7 @@
                         <p>Date Received:</p>
                         <p><asp:Label ID="lblReceiveDate" runat="server"></asp:Label></p>
                                                           
-                        <p class="btn_continue"><asp:Button ID="btnPickUpNow" class="btn btn-lg btn-primary" runat="server" Text="Pick Up Now" /></p>
+                        <p class="btn_continue"><asp:Button ID="btnPickUpNow" class="btn btn-lg btn-primary" runat="server" Text="Pick Up Now" OnClick="btnPickUpNow_Click" /></p>
                            
                    </asp:Panel>
                     <p><asp:Label ID="lblMessage" runat="server"></asp:Label></p>

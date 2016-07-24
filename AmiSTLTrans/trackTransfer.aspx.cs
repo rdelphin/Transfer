@@ -69,7 +69,7 @@ namespace AmiSTLTrans
                     else
                     {
                         btnPickUpNow.Enabled = true;
-                        lblMessage.Text = "<a href =\"trackTransfer.aspx\">Click here to the Receiver.</a>";
+                        lblMessage.Text = "<a href =\"trackTransfer.aspx\">Click here to track another transfer.</a>";
                     }
       
                     
@@ -96,6 +96,55 @@ namespace AmiSTLTrans
                 con.Dispose();
 
             }
+        }
+
+        protected void btnPickUpNow_Click(object sender, EventArgs e)
+        {
+            String CS = ConfigurationManager.ConnectionStrings["ASLT"].ConnectionString;
+
+            SqlConnection con = new SqlConnection(CS);
+
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.CommandText = "spUpdateTransfer";
+
+            cmd.Parameters.Add("@TransferID", SqlDbType.Int).Value = txtTrackTransfer.Text;
+
+            cmd.Parameters.Add("@SenderLName", SqlDbType.NVarChar).Value = txtTrackLastName.Text;
+
+            cmd.Parameters.Add("@LastUpdatedBy", SqlDbType.NVarChar).Value = Session["UserName"].ToString();
+            cmd.Connection = con;
+
+            try
+
+            {
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+
+            catch (Exception ex)
+
+            {
+
+                throw ex;
+
+            }
+
+            finally
+
+            {
+
+                con.Close();
+
+                con.Dispose();
+                Response.Redirect("receiverThankYou.aspx");
+                //btnPickUpNow.Enabled = false;
+            }
+
         }
     }
 }

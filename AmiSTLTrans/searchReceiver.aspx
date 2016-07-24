@@ -6,6 +6,9 @@
                 <div class="col-md-5">
                     <div class="page-header"><h1>Search Receiver</h1></div>
                     <asp:TextBox ID="txtPhone" class="form-control" runat="server"></asp:TextBox>
+                    <script type="text/javascript">
+                        $("input[id$=txtPhone]").mask("999-9-999-9999");
+                    </script>
                     <p class="btn_continue"><asp:Button ID="btnSearch" class="btn btn-lg btn-primary" runat="server" Text="Search" OnClick="btnSearch_Click" /></p>
 
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowDataBound="OnRowDataBound">

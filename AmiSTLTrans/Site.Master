@@ -8,7 +8,10 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/main.css" /> 
-    
+    <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/jquery.maskedinput.min.js" type="text/javascript"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -50,7 +53,7 @@
         <div class="container">
             <footer>
                 <p>
-                    &copy; <%=DateTime.Now.Year %>
+                    &copy; <%=DateTime.Now.Year %> Ami Saint-Laurent, inc. All Rights Reserved.
                 </p>
             </footer>
         </div>

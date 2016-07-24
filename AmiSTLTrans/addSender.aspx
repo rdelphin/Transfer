@@ -1,7 +1,49 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="addSender.aspx.cs" Inherits="AmiSTLTrans.addSender" %>
 
-<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
+<asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
+    <!-- validation -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+            // create custom 'lettersonly' method
+            $.validator.addMethod("lettersonly", function(value, element) {
+                return this.optional(element) || /^[a-z\s]+$/i.test(value);
+            }, "Name must contain only letters.");
 
+            // validate signup form on keyup and submit
+            $("#form1").validate({
+                rules: {                  
+                    <%=txtSenderFName.UniqueID %> : {
+                        required: true,
+                        lettersonly: true,
+                        minlength: 6
+                    },
+                    
+                    <%=txtSenderLName.UniqueID %> : {
+                        required: true,
+                        lettersonly: true,
+                        minlength: 6
+                    }
+                },
+                messages: {
+                    
+                    <%=txtSenderFName.UniqueID %> : {
+                        required: "Please enter a name",
+                        minlength: "First name must consist of at least 6 characters"
+                    },                    
+                    <%=txtSenderLName.UniqueID %> : {
+                        required: "Please enter a name",
+                        minlength: "Last name must consist of at least 6 characters"
+                    }
+                },
+            });
+
+        });
+
+    </script>
+</asp:Content>
+
+<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
     <div class="container">
         
         <div class="row start_transfer">            
@@ -14,11 +56,8 @@
                     <asp:TextBox ID="txtSenderPhone" class="form-control" placeholder="Sender Phone" runat="server"></asp:TextBox>
 
                     <!-- JQuery -->
-                    <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
-
-                    <script src="scripts/jquery.maskedinput.min.js" type="text/javascript"></script>
                     <script type="text/javascript">
-                        $('#txtSenderPhone').mask('999-999-9999');
+                        $("input[id$=txtSenderPhone]").mask("999-999-9999");
                     </script>
                     <p class="btn_continue"><asp:Button ID="btnReset" class="btn btn-lg btn-danger" Text="Reset" runat="server" />
                     <asp:Button ID="btnAdd" class="btn btn-lg btn-primary" Text="Add" runat="server" OnClick="btnAdd_Click" /></p>

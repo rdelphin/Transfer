@@ -3,25 +3,21 @@
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
 
 <asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
+    
 
     <div class="container">
-        
+    
             <div class="row start_transfer">
                 <div class="col-md-5">
                     <div class="page-header"><h1>Search Sender</h1></div>
                     <asp:TextBox ID="txtPhone" class="form-control" runat="server"></asp:TextBox>
+                     <script type="text/javascript">
+                           $("input[id$=txtPhone]").mask("999-999-9999");
+                     </script>
                     <p class="btn_continue">
                         <asp:Button ID="btnSearch" class="btn btn-lg btn-primary" runat="server" Text="Search" OnClick="btnSearch_Click" />
                     </p>
-
-                    <!-- JQuery -->
-                    <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
-                    <script src="scripts/jquery.maskedinput.min.js" type="text/javascript"></script> 
-                    
-                    <script type="text/javascript">
-                        $('#txtPhone').mask('999-999-9999');
-                    </script>
-                    
+                                                                      
                     <!-- add sender -->
                     <p>
                         <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowDataBound="OnRowDataBound">

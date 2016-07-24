@@ -1,4 +1,37 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="startTransfer.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
+
+<asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
+    <!-- validation -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+            // create custom 'lettersonly' method
+            $.validator.addMethod("lettersonly", function(value, element) {
+                return this.optional(element) || /^[a-z\s]+$/i.test(value);
+            }, "Name must contain only letters.");
+
+            // validate signup form on keyup and submit
+            $("#form1").validate({
+                rules: {                  
+                    <%=txtAmount.UniqueID %> : {
+                        required: true,
+                        digits: true,
+                        //minlength: 6
+                    }
+                },
+                messages: {
+                    
+                    <%=txtAmount.UniqueID %> : {
+                        required: "Please enter an amount",
+                        digits: "Amount must be digits only"
+                    }
+                },
+            });
+
+        });
+
+    </script>
+</asp:Content>
    
 <asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
     <div class="container">
@@ -18,7 +51,7 @@
                     <h4>Send amount</h4>
                     <div class="input-group">
                         <div class="input-group-addon">$</div>
-                        <asp:TextBox ID="txtAmount" class="form-control" runat="server" OnTextChanged="txtAmount_TextChanged" AutoPostBack="true"></asp:TextBox>
+                        <asp:TextBox ID="txtAmount" class="form-control" data-toggle="tooltip" title="Enter send amount" runat="server" OnTextChanged="txtAmount_TextChanged" AutoPostBack="true"></asp:TextBox>
                         <div class="input-group-addon">.00</div>
                     </div>
 

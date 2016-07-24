@@ -84,6 +84,12 @@ input[type="password"] {
   border-top-right-radius: 0;
 }
 
+/* form validation error*/
+label.error {
+    color: red;
+    display: inline-flex;
+}
+
 dt {
     color: #393939;
     font-weight: normal;
@@ -147,6 +153,10 @@ p.btn_continue {
 
 .star {
     float: right;
+}
+
+footer {
+    margin-top: 20px;
 }
 
 .colorgraph {
