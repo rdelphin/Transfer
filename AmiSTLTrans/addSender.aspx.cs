@@ -65,7 +65,7 @@ namespace AmiSTLTrans
                 btnReset.Enabled = false;
                 btnAdd.Enabled = false;
 
-                lblMessage.Text = "Record inserted successfully <a href=\"searchReceiver.aspx\">Click here to add the Receiver.</a>";
+                lblMessage.Text = "Sender added successfully! <a href=\"searchReceiver.aspx\">Click here to add the Receiver.</a>";
 
 
 
