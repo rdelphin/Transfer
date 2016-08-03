@@ -49,7 +49,7 @@
         <div class="row start_transfer">
             
             
-                <div class="col-md-5">
+                <div class="col-md-6 col-md-offset-3">
                     <div class="page-header"><h1>Send Money</h1></div>
                     <h4>Sending money to</h4>
                     <asp:DropDownList ID="DropDownList" class="form-control" runat="server">
@@ -70,7 +70,7 @@
 
                 </div>
                 
-                <div class="col-md-7">
+                <!-- div class="col-md-7">
                     <div class="page-header"><h1>Transfer Summary</h1></div>
                     <div class="details">                     
                         <dl>
@@ -87,7 +87,7 @@
                             <dt class="total"><asp:Label ID="lblTotal" Text="0.00" runat="server"></asp:Label> USD</dt>
                         </dl>
                     </div> <!-- /.details -->
-                </div> <!-- /.col-md-7 -->                
+                </!--> <!-- /.col-md-7 -->                
             
         </div> <!-- /.row -->
         
