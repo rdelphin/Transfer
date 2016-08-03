@@ -16,24 +16,24 @@
                     <%=txtSenderFName.UniqueID %> : {
                         required: true,
                         lettersonly: true,
-                        minlength: 6
+                        minlength: 3
                     },
                     
                     <%=txtSenderLName.UniqueID %> : {
                         required: true,
                         lettersonly: true,
-                        minlength: 6
+                        minlength: 3
                     }
                 },
                 messages: {
                     
                     <%=txtSenderFName.UniqueID %> : {
                         required: "Please enter a name",
-                        minlength: "First name must consist of at least 6 characters"
+                        minlength: "First name must consist of at least 3 characters"
                     },                    
                     <%=txtSenderLName.UniqueID %> : {
                         required: "Please enter a name",
-                        minlength: "Last name must consist of at least 6 characters"
+                        minlength: "Last name must consist of at least 3 characters"
                     }
                 },
             });
@@ -59,7 +59,7 @@
                     <script type="text/javascript">
                         $("input[id$=txtSenderPhone]").mask("999-999-9999");
                     </script>
-                    <p class="btn_continue"><asp:Button ID="btnReset" class="btn btn-lg btn-danger" Text="Reset" runat="server" />
+                    <p class="btn_continue"><asp:Button ID="btnReset" class="btn btn-lg btn-danger" Text="Reset" runat="server" OnClick="btnReset_Click" />
                     <asp:Button ID="btnAdd" class="btn btn-lg btn-primary" Text="Add" runat="server" OnClick="btnAdd_Click" /></p>
                     
                     <asp:Label ID="lblMessage" runat="server"></asp:Label>

@@ -38,10 +38,11 @@ namespace AmiSTLTrans
             {
                 SqlCommand cmd = new SqlCommand("spAuthenticateUser", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                // FormsAuthentication is in System.Web.Security string EncryptedPassword = FormsAuthentication.HashPasswordForStori­ngInConfigFile(password, "SHA1"); 
+                // FormsAuthentication is in System.Web.Security 
                 // SqlParameter is in System.Data namespace 
+                string EncryptedPassword = FormsAuthentication.HashPasswordForStori­ngInConfigFile(password, "SHA1");
                 SqlParameter paramUsername = new SqlParameter("@UserName", username);
-                SqlParameter paramPassword = new SqlParameter("@Password", password);//EncryptedPassword);
+                SqlParameter paramPassword = new SqlParameter("@Password", EncryptedPassword); // password);
 
                 cmd.Parameters.Add(paramUsername);
                 cmd.Parameters.Add(paramPassword);

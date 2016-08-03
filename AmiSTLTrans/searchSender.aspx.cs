@@ -27,7 +27,6 @@ namespace AmiSTLTrans
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-      
             String CS = ConfigurationManager.ConnectionStrings["ASLT"].ConnectionString;
 
             SqlConnection con = new SqlConnection(CS);
@@ -65,8 +64,8 @@ namespace AmiSTLTrans
             {
 
                 con.Close();
-
                 con.Dispose();
+                Session["SenderPhone"] = txtPhone.Text;
 
             }
         }
@@ -94,12 +93,7 @@ namespace AmiSTLTrans
 
             lblSenderName.Text =Session["SenderFName"].ToString() + " " + Session["SenderLName"].ToString();
             lblPhone.Text = Session["SenderPhone"].ToString();
-            //lblMessage02.Text= "You have selected " + row.Cells[2].Text + " " + row.Cells[1].Text;
-            /* int index = GridView1.SelectedRow.RowIndex;
-             string name = GridView1.SelectedRow.Cells[0].Text;
-             string country = GridView1.SelectedRow.Cells[1].Text;
-             string message = "Row Index: " + index + "\\nName: " + name + "\\nCountry: " + country;
-             ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);*/
+  
         }
 
     }

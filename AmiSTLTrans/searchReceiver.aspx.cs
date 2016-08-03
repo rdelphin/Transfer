@@ -63,8 +63,8 @@ namespace AmiSTLTrans
             {
 
                 con.Close();
-
                 con.Dispose();
+                Session["ReceiverPhone"] = txtPhone.Text;
 
             }
         }
@@ -92,12 +92,6 @@ namespace AmiSTLTrans
 
             lblReceiverName.Text = Session["ReceiverFName"].ToString() + " " + Session["ReceiverLName"].ToString();
             lblReceiverPhone.Text = Session["ReceiverPhone"].ToString();
-            //lblMessage02.Text= "You have selected " + row.Cells[2].Text + " " + row.Cells[1].Text;
-            /* int index = GridView1.SelectedRow.RowIndex;
-             string name = GridView1.SelectedRow.Cells[0].Text;
-             string country = GridView1.SelectedRow.Cells[1].Text;
-             string message = "Row Index: " + index + "\\nName: " + name + "\\nCountry: " + country;
-             ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);*/
         }
     
     }

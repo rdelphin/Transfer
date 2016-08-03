@@ -56,15 +56,14 @@ namespace AmiSTLTrans
                     lblDateSent.Text = dr["CreatedOn"].ToString();
                     lblAmountSent.Text = dr["TransferAmount"].ToString();
                     lblisReceived.Text = dr["isReceived"].ToString();
+                    lblTransferNote.Text = dr["TransferNote"].ToString();
                     lblReceiveDate.Text = dr["ReceivedOn"].ToString();
-
-
-
+                    
                     if (lblisReceived.Text == "YES")
                     {
                         btnPickUpNow.Enabled = false;
                         lblReceiveDate.Visible = true;
-                        lblMessage.Text = "<a href =\"trackTransfer.aspx\">Click here to the Receiver.</a>";
+                        lblMessage.Text = "<a href =\"trackTransfer.aspx\">Click here to track another transfer.</a>";
                     }
                     else
                     {

@@ -16,7 +16,7 @@ namespace AmiSTLTrans
 
         protected void btnMakeAnotherTransfer_Click(object sender, EventArgs e)
         {
-            Response.Redirect("startTransfer.aspx");
+            Response.Redirect("default.aspx");
         }
     }
 }

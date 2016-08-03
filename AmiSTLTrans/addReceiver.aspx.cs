@@ -22,6 +22,11 @@ namespace AmiSTLTrans
             lblTransFee.Text = Session["TransFee"].ToString();
             lblTotal.Text = Session["Total"].ToString();
 
+            txtReceiverPhone.Text = Session["ReceiverPhone"].ToString();
+            
+            btnAdd.Enabled = true;
+            btnReset.Enabled = true;
+
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
@@ -59,10 +64,15 @@ namespace AmiSTLTrans
                 Session["ReceiverLName"] = txtReceiverLName.Text;
                 Session["ReceiverPhone"] = txtReceiverPhone.Text;
 
+                lblReceiverName.Text = Session["ReceiverFName"].ToString() + " " + Session["ReceiverLName"].ToString();
+                lblReceiverPhone.Text = Session["ReceiverPhone"].ToString();
+
                 lblMessage.Text = "Record inserted successfully <a href=\"makeTransfer.aspx\">Click here to make the transfer.</a>";
 
-                lblSenderName.Text = Session["ReceiverFName"].ToString() + " " + Session["ReceiverLName"].ToString();
-                lblPhone.Text = Session["ReceiverPhone"].ToString();
+                btnAdd.Enabled = false;
+                btnReset.Enabled = false;
+
+                
 
             }
 
@@ -86,5 +96,11 @@ namespace AmiSTLTrans
 
         }
 
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            txtReceiverFName.Text = "";
+            txtReceiverLName.Text = "";
+            txtReceiverPhone.Text = "";
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="logout.aspx.cs" Inherits="AmiSTLTrans.logout" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logout.aspx.cs" Inherits="AmiSTLTrans.logout" %>
 
 <!DOCTYPE html>
 

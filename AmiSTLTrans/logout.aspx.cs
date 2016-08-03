@@ -14,8 +14,9 @@ namespace AmiSTLTrans
     public partial class logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {            
-            Session.Clear();
+        {
+            Session.Remove("User_ID");
+            Session.RemoveAll();
             Response.Redirect("login.aspx");
         }
     }

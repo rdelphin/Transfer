@@ -29,6 +29,9 @@
                             
                         <p>Amount Sent:</p>
                         <p><asp:Label ID="lblAmountSent" runat="server"></asp:Label></p>
+
+                        <p>Note:</p>
+                        <p><asp:Label ID="lblTransferNote" runat="server"></asp:Label></p>
                             
                         <p>Is Already Picked Up?</p>
                         <p><asp:Label ID="lblisReceived" runat="server"></asp:Label></p>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="startTransfer.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
 
 <asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
     <!-- validation -->
@@ -10,20 +10,30 @@
                 return this.optional(element) || /^[a-z\s]+$/i.test(value);
             }, "Name must contain only letters.");
 
+            // create custom 'positive number only' method
+            $.validator.addMethod('positiveNumber',
+            function (value) { 
+                return Number(value) > 0;
+            }, 'Enter a positive number.'); 
+
+
             // validate signup form on keyup and submit
             $("#form1").validate({
                 rules: {                  
                     <%=txtAmount.UniqueID %> : {
                         required: true,
                         digits: true,
-                        //minlength: 6
+                        min: 1
+                        
+                       //minlength: 6
                     }
                 },
                 messages: {
                     
                     <%=txtAmount.UniqueID %> : {
                         required: "Please enter an amount",
-                        digits: "Amount must be digits only"
+                        digits: "Amount must be digits only",
+                        min: "Amount must be greateer than $1"
                     }
                 },
             });

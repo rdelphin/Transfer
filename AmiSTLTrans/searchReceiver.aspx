@@ -11,10 +11,27 @@
                     </script>
                     <p class="btn_continue"><asp:Button ID="btnSearch" class="btn btn-lg btn-primary" runat="server" Text="Search" OnClick="btnSearch_Click" /></p>
 
-                    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowDataBound="OnRowDataBound">
+                    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowDataBound="OnRowDataBound" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="false">
+                        <AlternatingRowStyle BackColor="White" />
+                        <EditRowStyle BackColor="#2461BF" />
                         <EmptyDataTemplate>
                             Receiver not found.<a href="addReceiver.aspx">Click here to Add the receiver</a>
                         </EmptyDataTemplate>
+                        <Columns>
+                            <asp:BoundField DataField="ReceiverID" HeaderText="ID" ItemStyle-Width="20"/>
+                            <asp:BoundField DataField="ReceiverFName" HeaderText="First Name" ItemStyle-Width="130" />
+                            <asp:BoundField DataField="ReceiverLName" HeaderText="Last Name" ItemStyle-Width="130" />
+                            <asp:BoundField DataField="ReceiverPhone" HeaderText="Phone" ItemStyle-Width="120" />
+                        </Columns>
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#EFF3FB" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                        <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                        <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                        <SortedDescendingHeaderStyle BackColor="#4870BE" />
                     </asp:GridView>
                     <br />
                     <asp:Label ID="lblMessage" runat="server"></asp:Label>                    
