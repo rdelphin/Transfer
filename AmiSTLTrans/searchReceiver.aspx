@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="searchReceiver.aspx.cs" Inherits="AmiSTLTrans.searchReceiver" EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" Title="Search Receiver" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="searchReceiver.aspx.cs" Inherits="AmiSTLTrans.searchReceiver" EnableEventValidation="false" %>
 
 <asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
     <div class="container">        
@@ -9,7 +9,7 @@
                     <script type="text/javascript">
                         $("input[id$=txtPhone]").mask("999-9-999-9999");
                     </script>
-                    <p class="btn_continue"><asp:Button ID="btnSearch" class="btn btn-lg btn-primary" runat="server" Text="Search" OnClick="btnSearch_Click" /></p>
+                    <p class="btn_continue"><asp:Button ID="btnSearch" class="btn btn-lg btn-success" runat="server" Text="Search" OnClick="btnSearch_Click" /></p>
 
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowDataBound="OnRowDataBound" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="false">
                         <AlternatingRowStyle BackColor="White" />

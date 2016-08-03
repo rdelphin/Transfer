@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="trackTransfer.aspx.cs" Inherits="AmiSTLTrans.trackTransfer" %>
+﻿<%@ Page Language="C#" Title="Track Transfer" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="trackTransfer.aspx.cs" Inherits="AmiSTLTrans.trackTransfer" %>
 
 <asp:content id="content" contentplaceholderid="content" runat="server">
     <div class="container">
@@ -14,7 +14,7 @@
                      
                     <asp:TextBox ID="txtTrackLastName" class="form-control" runat="server" placeholder="Enter Sender Last Name"></asp:TextBox>
                        
-                    <p class="btn_continue"><asp:Button ID="btnTrackTranfer" class="btn btn-lg btn-primary" runat="server" Text="Track Transfer" OnClick="btnTrackTranfer_Click" /></p>
+                    <p class="btn_continue"><asp:Button ID="btnTrackTranfer" class="btn btn-lg btn-success" runat="server" Text="Track Transfer" OnClick="btnTrackTranfer_Click" /></p>
                            
                     <asp:Panel ID="pnTrackTransfer" runat="server">
                         

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="makeTransfer.aspx.cs" Inherits="AmiSTLTrans.makeTransfer" %>
+﻿<%@ Page Language="C#" Title="Make Transfer" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="makeTransfer.aspx.cs" Inherits="AmiSTLTrans.makeTransfer" %>
 
 <asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
 
@@ -38,7 +38,7 @@
                             <td class="total">$<asp:Label ID="lblTotal" runat="server" Text=""></asp:Label></td>
                         </tr>               
                     </table>
-                    <p class="btn_continue"><asp:Button ID="btnMakeTransfer" class="btn btn-lg btn-primary" Text="Make Transfer" runat="server" OnClick="btnMakeTransfer_Click" /></p>
+                    <p class="btn_continue"><asp:Button ID="btnMakeTransfer" class="btn btn-lg btn-success" Text="Make Transfer" runat="server" OnClick="btnMakeTransfer_Click" /></p>
                 </div>
         </div>
     </div>

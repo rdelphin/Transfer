@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
+﻿<%@ Page Language="C#" Title="Send Money" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AmiSTLTrans.sendMoney" %>
 
 <asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
     <!-- validation -->
@@ -66,7 +66,7 @@
                     </div>
 
                     <!-- continue button -->
-                    <p class="btn_continue"><asp:Button ID="btnContinue" class="btn btn-lg btn-primary" Text="Continue" runat="server" OnClick="btnContinue_Click" /></p>
+                    <p class="btn_continue"><asp:Button ID="btnContinue" class="btn btn-lg btn-success" Text="Continue" runat="server" OnClick="btnContinue_Click" /></p>
 
                 </div>
                 

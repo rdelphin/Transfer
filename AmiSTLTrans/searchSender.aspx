@@ -8,14 +8,14 @@
     <div class="container">
     
             <div class="row start_transfer">
-                <div class="auto-style1">
+                <div class="col-md-5">
                     <div class="page-header"><h1>Search Sender</h1></div>
                     <asp:TextBox ID="txtPhone" class="form-control" runat="server"></asp:TextBox>
                      <script type="text/javascript">
                            $("input[id$=txtPhone]").mask("999-999-9999");
                      </script>
                     <p class="btn_continue">
-                        <asp:Button ID="btnSearch" class="btn btn-lg btn-primary" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                        <asp:Button ID="btnSearch" class="btn btn-lg btn-success" runat="server" Text="Search" OnClick="btnSearch_Click" />
                     </p>
                                                                       
                     <!-- add sender -->

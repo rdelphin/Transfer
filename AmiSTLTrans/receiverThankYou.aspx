@@ -8,7 +8,7 @@
 
                 <p>Thank you for choosing AMI ST-Laurent!</p>
 
-                <asp:Button ID="btnReceiveMakeAnotherTransfer" CssClass="btn btn-lg btn-primary" Text="Receive Another Tranfer" runat="server" OnClick="btnReciverAnotherTransfer_Click" /></td></tr>
+                <asp:Button ID="btnReceiveMakeAnotherTransfer" CssClass="btn btn-lg btn-success" Text="Receive Another Tranfer" runat="server" OnClick="btnReciverAnotherTransfer_Click" /></td></tr>
 
             </div>
         </div>

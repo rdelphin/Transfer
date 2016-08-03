@@ -12,7 +12,7 @@
                 <p>Your transfer tracking number is :
                     <asp:Label ID="lblmessage" runat="server" Text=""></asp:Label>
                 </p>
-                <asp:Button ID="btnMakeAnotherTransfer" CssClass="btn btn-lg btn-primary" Text="Make Another Tranfer" runat="server" OnClick="btnMakeAnotherTransfer_Click" /></td></tr>
+                <asp:Button ID="btnMakeAnotherTransfer" CssClass="btn btn-lg btn-success" Text="Make Another Tranfer" runat="server" OnClick="btnMakeAnotherTransfer_Click" /></td></tr>
 
             </div>
         </div>

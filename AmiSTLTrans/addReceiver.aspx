@@ -61,7 +61,7 @@
                     </script>
                     <p class="btn_continue">
                         <asp:Button ID="btnReset" class="btn btn-lg btn-danger" Text="Reset" runat="server" OnClick="btnReset_Click" />
-                        <asp:Button ID="btnAdd" class="btn btn-lg btn-primary" Text="Add" runat="server" OnClick="btnAdd_Click" />
+                        <asp:Button ID="btnAdd" class="btn btn-lg btn-success" Text="Add" runat="server" OnClick="btnAdd_Click" />
                     </p>
 
                     <asp:Label ID="lblMessage" runat="server"></asp:Label>

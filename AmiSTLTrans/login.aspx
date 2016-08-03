@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Transfer Log in</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/main.css" />
@@ -25,7 +26,7 @@
                 <asp:CheckBox ID="chkBoxRememberMe" runat="server" Text="Remember Me" />
             </div>
 			
-			<asp:Button ID="btnLogin" class="btn btn-lg btn-primary btn-block" runat ="server" Text="Login" OnClick="btnLogin_Click" />
+			<asp:Button ID="btnLogin" class="btn btn-lg btn-success btn-block" runat ="server" Text="Login" OnClick="btnLogin_Click" />
             
             <!--  class="alert alert-danger" role="alert" -->			            	        
             <div class="error_msg">
