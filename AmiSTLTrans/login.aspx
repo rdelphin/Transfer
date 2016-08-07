@@ -33,7 +33,7 @@
 	            <asp:Label ID="lblMessage" runat="server"></asp:Label>            
             </div>
 						
-			<p class="register_txt"><a href="registration/register.aspx">Click here to register</a> if you do not have a username and password</p>
+			<!-- <p class="register_txt"><a href="registration/register.aspx">Click here to register</a> if you do not have a username and password</p> -->
 	    </form>
 	</div> <!-- /.wrapper -->
 

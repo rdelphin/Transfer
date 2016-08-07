@@ -34,7 +34,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="default.aspx">Send Money</a></li>
                 <li><a href="trackTransfer.aspx">Track Transfers</a></li>
-                <li><a href="#">Fees and Estimate</a></li>            
+                <li><a href="#">Fees and Estimate</a></li>
+                <li><a href="transferByUserReport.aspx">Reports</a></li>         
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Welcome!</a></li>            

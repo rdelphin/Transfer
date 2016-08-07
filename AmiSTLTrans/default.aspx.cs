@@ -21,16 +21,18 @@ namespace AmiSTLTrans
 
         }
 
-        protected void txtAmount_TextChanged(object sender, EventArgs e)
+       
+        protected void btnContinue_Click(object sender, EventArgs e)
         {
+
             double fee;
             float amount;
             //fee = float.Parse(lblTransFee.Text);
 
             if (float.TryParse(txtAmount.Text, out amount))
             {
-                
-               
+
+
 
                 if (amount > 0 && amount <= 400.00)
                 {
@@ -52,7 +54,7 @@ namespace AmiSTLTrans
                         fee = Math.Truncate(amount / 400) * 5 + 5;
                     }
                     else
-                    fee = Math.Truncate(amount / 400) * 5;
+                        fee = Math.Truncate(amount / 400) * 5;
                     lblTransFee.Text = Convert.ToString(fee);
                     Session["TransFee"] = lblTransFee;
                     lblTotal.Text = Convert.ToString(amount + fee);
@@ -63,13 +65,10 @@ namespace AmiSTLTrans
                     lblReceiveAmount.Text = Convert.ToString(amount);
                     btnContinue.Enabled = true;
                 }
-                    
-               
-            }
-          }
 
-        protected void btnContinue_Click(object sender, EventArgs e)
-        {
+
+            }
+
             Session["TransAmount"] = lblTransAmount.Text;
             Session["ReceiveAmount"] = lblReceiveAmount.Text;
             Session["TransFee"] = lblTransFee.Text;

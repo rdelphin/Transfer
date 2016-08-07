@@ -17,7 +17,7 @@ namespace AmiSTLTrans
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+                      
             lblTransAmount.Text = Session["TransAmount"].ToString();
             lblReceiveAmount.Text = Session["ReceiveAmount"].ToString();
             lblTransFee.Text = Session["TransFee"].ToString();
@@ -90,7 +90,7 @@ namespace AmiSTLTrans
             Session["SenderPhone"] = row.Cells[3].Text;
 
             lblMessage.Text = "Sender has been selected.<a href=\"searchReceiver.aspx\">Click here to the Receiver.</a>";
-
+           
             lblSenderName.Text =Session["SenderFName"].ToString() + " " + Session["SenderLName"].ToString();
             lblPhone.Text = Session["SenderPhone"].ToString();
   

@@ -23,6 +23,9 @@
                         required: true,
                         lettersonly: true,
                         minlength: 3
+                    },
+                    <%=txtSenderPhone.UniqueID %>:{
+                        required:true
                     }
                 },
                 messages: {
@@ -34,6 +37,9 @@
                     <%=txtSenderLName.UniqueID %> : {
                         required: "Please enter a name",
                         minlength: "Last name must consist of at least 3 characters"
+                    },
+                    <%=txtSenderPhone.UniqueID %>: {
+                        required:"Please enter a phone number"
                     }
                 },
             });
@@ -67,7 +73,7 @@
   
                 <div class="col-md-7">
                     <div class="page-header"><h1>Transfer Summary</h1></div>
-                    <div class="details">  
+                    <div class="details`">  
                         <asp:Panel runat="server">                      
                             <dl>
                                 <dd>Sender</dd>

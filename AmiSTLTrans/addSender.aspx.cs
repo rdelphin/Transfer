@@ -59,11 +59,14 @@ namespace AmiSTLTrans
                 Session["SenderLName"] = txtSenderLName.Text;
                 Session["SenderPhone"] = txtSenderPhone.Text;
 
+              
+                btnReset.Enabled = false;
+                btnAdd.Enabled = false;
+
                 lblSenderName.Text = Session["SenderFName"].ToString() + " " + Session["SenderLName"].ToString();
                 lblPhone.Text = Session["SenderPhone"].ToString();
 
-                btnReset.Enabled = false;
-                btnAdd.Enabled = false;
+                
 
                 lblMessage.Text = "Sender added successfully! <a href=\"searchReceiver.aspx\">Click here to add the Receiver.</a>";
 

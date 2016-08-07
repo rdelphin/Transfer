@@ -75,6 +75,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -117,6 +118,17 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="DSReport.xsc">
+      <DependentUpon>DSReport.xsd</DependentUpon>
+    </Content>
+    <None Include="DSReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DSReport.xss">
+      <DependentUpon>DSReport.xsd</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\Local IIS Website.pubxml" />
     <None Include="scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -146,6 +158,7 @@
     <Content Include="searchSender.aspx" />
     <Content Include="thankYou.aspx" />
     <Content Include="trackTransfer.aspx" />
+    <Content Include="transferByUserReport.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -165,6 +178,11 @@
     </Compile>
     <Compile Include="addSender.aspx.designer.cs">
       <DependentUpon>addSender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DSReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -245,6 +263,13 @@
     <Compile Include="trackTransfer.aspx.designer.cs">
       <DependentUpon>trackTransfer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="transferByUserReport.aspx.cs">
+      <DependentUpon>transferByUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transferByUserReport.aspx.designer.cs">
+      <DependentUpon>transferByUserReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,6 +277,9 @@
     <Compile Include="welcome.aspx.designer.cs">
       <DependentUpon>welcome.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="tranferByUserReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

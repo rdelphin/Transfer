@@ -23,7 +23,10 @@
                         required: true,
                         lettersonly: true,
                         minlength: 3
-                    }
+                    },
+                    <%=txtReceiverPhone.UniqueID %>{
+                        required: true
+                    }   
                 },
                 messages: {
                     
@@ -34,7 +37,11 @@
                     <%=txtReceiverLName.UniqueID %> : {
                         required: "Please enter a name",
                         minlength: "Last name must consist of at least 3 characters"
+                    },
+                    <%=txtReceiverPhone.UniqueID %>:{
+                        required: "Please enter a phone number"
                     }
+
                 },
             });
 

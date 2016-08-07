@@ -27,10 +27,10 @@
                               Sender not found.<a href="addSender.aspx">Click here to Add the sender</a>
                           </EmptyDataTemplate>
                           <Columns>
-                              <asp:BoundField DataField="SenderID" HeaderText="ID" ItemStyle-Width ="20"/>
+                              <asp:BoundField DataField="SenderID" HeaderText="ID" ItemStyle-Width ="55"/>
                               <asp:BoundField DataField="SenderFName" HeaderText=" First Name " ItemStyle-Width ="130" />
                               <asp:BoundField DataField="SenderLName" HeaderText=" Last Name " ItemStyle-Width ="130" />
-                              <asp:BoundField DataField="SenderPhone" HeaderText=" Phone " ItemStyle-Width ="100" />
+                              <asp:BoundField DataField="SenderPhone" HeaderText=" Phone " ItemStyle-Width ="120" />
                           </Columns>
                             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                             <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

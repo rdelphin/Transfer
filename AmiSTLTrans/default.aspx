@@ -61,7 +61,7 @@
                     <h4>Send amount</h4>
                     <div class="input-group">
                         <div class="input-group-addon">$</div>
-                        <asp:TextBox ID="txtAmount" class="form-control" data-toggle="tooltip" title="Enter send amount" runat="server" OnTextChanged="txtAmount_TextChanged" AutoPostBack="true"></asp:TextBox>
+                        <asp:TextBox ID="txtAmount" class="form-control" data-toggle="tooltip" title="Enter send amount" runat="server" ></asp:TextBox>
                         <div class="input-group-addon">.00</div>
                     </div>
 

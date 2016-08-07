@@ -18,7 +18,7 @@
                             Receiver not found.<a href="addReceiver.aspx">Click here to Add the receiver</a>
                         </EmptyDataTemplate>
                         <Columns>
-                            <asp:BoundField DataField="ReceiverID" HeaderText="ID" ItemStyle-Width="20"/>
+                            <asp:BoundField DataField="ReceiverID" HeaderText="ID" ItemStyle-Width="55"/>
                             <asp:BoundField DataField="ReceiverFName" HeaderText="First Name" ItemStyle-Width="130" />
                             <asp:BoundField DataField="ReceiverLName" HeaderText="Last Name" ItemStyle-Width="130" />
                             <asp:BoundField DataField="ReceiverPhone" HeaderText="Phone" ItemStyle-Width="120" />
