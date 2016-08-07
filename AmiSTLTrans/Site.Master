@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=9" />
     
     <!-- CSS styles -->
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
@@ -53,13 +54,15 @@
         </asp:ContentPlaceHolder>
     </div>
 
-        <div class="container">
-            <footer>
-                <p>
-                    &copy; <%=DateTime.Now.Year %> Ami Saint-Laurent, inc. All Rights Reserved.
-                </p>
-            </footer>
-        </div>
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+            <div class="container">
+                <footer class="footer">
+                    <p>
+                        &copy; <%=DateTime.Now.Year %> Ami Saint-Laurent, inc. All Rights Reserved.
+                    </p>
+                </footer>
+            </div>
+        </asp:ContentPlaceHolder>
     </form>
     <script src="scripts/bootstrap.min.js"></script>
 </body>

@@ -9,6 +9,8 @@
         .auto-style1 {
             margin-right: 44px;
         }
+
+        div[id='ReportViewer1'] { height: 1px; }
     </style>
 </asp:Content> 
 
@@ -41,4 +43,3 @@
     </div>
           
 </asp:Content> 
-
