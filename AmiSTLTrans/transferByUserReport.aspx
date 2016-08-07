@@ -4,16 +4,6 @@
 
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 
-<asp:Content ID="Content1" runat="server" contentplaceholderid="head">
-    <style type="text/css">
-        .auto-style1 {
-            margin-right: 44px;
-        }
-
-        div[id='ReportViewer1'] { height: 1px; }
-    </style>
-</asp:Content> 
-
 <asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
     <div class="container">
         <div class="row">
