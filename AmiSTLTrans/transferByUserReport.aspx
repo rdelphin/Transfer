@@ -7,17 +7,39 @@
 <asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <asp:ScriptManager ID="ScriptManager1" runat="server">
+             <asp:ScriptManager ID="ScriptManager1" runat="server">
                 </asp:ScriptManager>
-                User <asp:DropDownList ID="ddlUsers" runat="server">
-                </asp:DropDownList> <br />
-                From <asp:TextBox ID="txtDateFrom" runat="server"></asp:TextBox>
-                <ajaxToolkit:CalendarExtender ID="txtDateFrom_CalendarExtender" runat="server" TargetControlID="txtDateFrom" />
-                To <asp:TextBox ID="txtDateTo" runat="server"> </asp:TextBox>
-                <ajaxToolkit:CalendarExtender ID="txtDateTo_CalendarExtender" runat="server" TargetControlID="txtDateTo" />
-                <asp:Button ID="btnViewReport" runat="server" Text="View Report" OnClick="btnViewReport_Click" />
-                <br />
+                
+                <div class="col-md-2">
+                    <p>User</p> <asp:DropDownList ID="ddlUsers" class="form-control" runat="server">
+                    </asp:DropDownList> 
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12xx">
+               
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <p>From</p> <asp:TextBox ID="txtDateFrom" class="form-control" runat="server"></asp:TextBox>
+                        <ajaxToolkit:CalendarExtender ID="txtDateFrom_CalendarExtender" runat="server" TargetControlID="txtDateFrom" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <p>To</p> <asp:TextBox ID="txtDateTo" class="form-control" runat="server"> </asp:TextBox>
+                        <ajaxToolkit:CalendarExtender ID="txtDateTo_CalendarExtender" runat="server" TargetControlID="txtDateTo" />                                                
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <asp:Button ID="btnViewReport" class="btn btn-lg btn-success btn-report" runat="server" Text="View Report" OnClick="btnViewReport_Click" />
+                    </div>
+                </div>
+            </div> <!-- /.col-md-8 -->
+        </div> <!-- /.row -->
                 <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="814px" CssClass="auto-style1" Height="359px">
                     <LocalReport ReportPath="tranferByUserReport.rdlc">
                         <DataSources>
@@ -28,8 +50,7 @@
       
                 <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetData" TypeName="AmiSTLTrans.DSReportTableAdapters.spGetTransfersTableAdapter"></asp:ObjectDataSource>
    
-            </div>
-        </div>
+            
     </div>
           
 </asp:Content> 

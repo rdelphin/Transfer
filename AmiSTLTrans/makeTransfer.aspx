@@ -18,7 +18,7 @@
                        </tr>
                         <tr>
                             <td colspan="2">
-                                <asp:TextBox ID="txtSenderNote" class="form-control" runat="server" Text="Add a note (Optional)"></asp:TextBox>
+                                <asp:TextBox ID="txtSenderNote" class="form-control" runat="server" placeholder="Add a note (Optional)"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>

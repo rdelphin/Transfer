@@ -20,7 +20,7 @@ namespace AmiSTLTrans
 
             if (!this.IsPostBack)
             {
-                string constr = ConfigurationManager.ConnectionStrings["AmiSTLConnectionString"].ConnectionString;
+                string constr = ConfigurationManager.ConnectionStrings["ASLT"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(constr))
                 {
                     using (SqlCommand cmd = new SqlCommand("SELECT UserName FROM tblUsers"))
@@ -54,7 +54,7 @@ namespace AmiSTLTrans
         private DataTable getSPResult()
         {
             DataTable ResulsTable = new DataTable();
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["AmiSTLConnectionString"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ASLT"].ConnectionString);
 
             try
             {
